@@ -2,14 +2,22 @@ public class SistemaMedida {
     public static void main(String[] args) throws Exception {
          char sigla = 'M';
 
-        if(sigla == 'P')
+        switch (sigla) {
+            case 'P':{
             System.out.print("PEQUENO");
-        else if(sigla == 'M')
+                break;
+            }
+            case 'M':{
             System.out.print("MEDIO");
-        else if(sigla == 'G')
-            System.out.print("GRANDE");
-        else
-            System.out.print("INDEFINIDO");
-            
+                break;
+            }
+            case 'G':{
+            System.out.println("GRANDE");
+                break;
+            }
+        
+            default:
+                System.out.println("INDEFINIDO");
+        }
     }
 }
