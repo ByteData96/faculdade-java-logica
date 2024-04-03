@@ -16,5 +16,7 @@ public class ContaTerminal {
         sexo = ler.next().charAt(0);
 
         
-        System.out.println("Olá " + nome + ", você tem " + idade + " anos e é do sexo " + sexo + ".");    }
-}
+        System.out.println("Olá " + nome + ", você tem " + idade + " anos e é do sexo " + sexo + ".");    
+        ler.close();
+        }
+    }
